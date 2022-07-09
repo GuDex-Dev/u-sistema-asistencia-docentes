@@ -71,6 +71,7 @@ public class eliminarDocenteFrame extends javax.swing.JFrame {
         jLabel1.setText("ELIMINAR DOCENTE");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 390, 80));
 
+        dniDocente.setEditable(false);
         dniDocente.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.add(dniDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, 150, -1));
 
@@ -86,6 +87,7 @@ public class eliminarDocenteFrame extends javax.swing.JFrame {
         jLabel7.setText("CLAVE: ");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 340, -1, -1));
 
+        claveDocente.setEditable(false);
         claveDocente.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.add(claveDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 340, 150, -1));
 
@@ -93,6 +95,7 @@ public class eliminarDocenteFrame extends javax.swing.JFrame {
         jLabel2.setText("NOMBRE:");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, -1, 20));
 
+        nombreDocente.setEditable(false);
         nombreDocente.setBackground(new java.awt.Color(204, 204, 204));
         nombreDocente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -115,9 +118,11 @@ public class eliminarDocenteFrame extends javax.swing.JFrame {
         });
         jPanel1.add(bt_eliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 390, 100, 40));
 
+        apellidosDocente.setEditable(false);
         apellidosDocente.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.add(apellidosDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, 150, -1));
 
+        aulaDocente.setEditable(false);
         aulaDocente.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.add(aulaDocente, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 300, 150, -1));
 
@@ -138,11 +143,13 @@ public class eliminarDocenteFrame extends javax.swing.JFrame {
         bt_masculino.setBackground(new java.awt.Color(102, 183, 179));
         bt_masculino.setForeground(new java.awt.Color(0, 0, 0));
         bt_masculino.setText("Masculino");
+        bt_masculino.setEnabled(false);
         jPanel1.add(bt_masculino, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, -1, 30));
 
         bt_femenino.setBackground(new java.awt.Color(102, 183, 179));
         bt_femenino.setForeground(new java.awt.Color(0, 0, 0));
         bt_femenino.setText("Femenino");
+        bt_femenino.setEnabled(false);
         jPanel1.add(bt_femenino, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 260, -1, 30));
 
         jLabel8.setForeground(new java.awt.Color(0, 0, 0));
