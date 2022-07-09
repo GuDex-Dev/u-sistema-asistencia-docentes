@@ -1,0 +1,5 @@
+12345678 - Gabriel - Huertas Fiestas - Masculino - A - 0001 - ENTRADA Hora: 10:41 Fecha: 09/07/2022 - TARDANZA -  - NO REGISTRADA
+23456789 - Kevin - Martinez Ojeda - Masculino - B - 0002 - ENTRADA Hora: 10:41 Fecha: 09/07/2022 - TARDANZA - SALIDA Hora: 10:41 Fecha: 09/07/2022 - PREMATURA
+34567891 - Víctor - Ortíz Ruíz - Masculino - C - 0003 - ENTRADA Hora: 10:42 Fecha: 09/07/2022 - TARDANZA -  - NO REGISTRADA
+45678912 - Juan - Pulache Castro - Masculino - D - 0004 -  - FALTÓ -  - NO REGISTRADA
+56789123 - Franco - Román Morán - Masculino - E - 0005 -  - FALTÓ -  - NO REGISTRADA
