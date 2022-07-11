@@ -19,6 +19,7 @@ public class modificarDocenteFrame extends javax.swing.JFrame {
      */
     public modificarDocenteFrame() {
         initComponents();
+        camposedit(false);
         setLocationRelativeTo(null);
         grupo_Sexo.add(bt_masculino);
         grupo_Sexo.add(bt_femenino);
@@ -275,6 +276,9 @@ public class modificarDocenteFrame extends javax.swing.JFrame {
             } else if ("Masculino".equals(listaDocentes.arrListDocente.get(pos).getSexo())) {
                 bt_masculino.setSelected(true);
             }
+            
+            camposedit(true);
+            
         } else {
             JOptionPane.showMessageDialog(null, "DNI no encontrado");
             grupo_Sexo.clearSelection();
@@ -283,9 +287,20 @@ public class modificarDocenteFrame extends javax.swing.JFrame {
             apellidosDocente.setText("");
             aulaDocente.setText("");
             claveDocente.setText("");
+            camposedit(false);
         }
     }//GEN-LAST:event_bt_buscarActionPerformed
 
+    private void camposedit(boolean edit) {
+        dniDocente.setEditable(edit);
+        claveDocente.setEditable(edit);
+        nombreDocente.setEditable(edit);
+        apellidosDocente.setEditable(edit);
+        aulaDocente.setEditable(edit);
+        bt_masculino.setEnabled(edit);
+        bt_femenino.setEnabled(edit);
+    }
+    
     private void dniModActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dniModActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_dniModActionPerformed

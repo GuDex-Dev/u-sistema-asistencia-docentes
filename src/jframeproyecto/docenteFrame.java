@@ -256,7 +256,7 @@ public class docenteFrame extends javax.swing.JFrame {
     public void name() {
 
         listaDocentes obj = new listaDocentes();
-        BB_Interactiva.setText("Chau, " + listaDocentes.arrListDocente.get(obj.BuscarXDni(iniciarSesionFrame.DniUs)).getNombre());
+        BB_Interactiva.setText("Hola, " + listaDocentes.arrListDocente.get(obj.BuscarXDni(iniciarSesionFrame.DniUs)).getNombre());
         BB_Interactiva.setHorizontalAlignment(0);
 
     }
