@@ -23,7 +23,11 @@ public class mostrarAsistenciasFrame extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         this.setResizable(false);
-        modelo = new DefaultTableModel();
+        modelo = new DefaultTableModel() {
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return false;
+            }
+        };
         modelo.addColumn("DNI");
         modelo.addColumn("NOMBRE");
         modelo.addColumn("APELLIDO");

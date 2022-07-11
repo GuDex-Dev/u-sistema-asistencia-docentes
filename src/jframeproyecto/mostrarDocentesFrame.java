@@ -26,7 +26,11 @@ public class mostrarDocentesFrame extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         this.setResizable(false);
-        modelo = new DefaultTableModel();
+        modelo = new DefaultTableModel() {
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return false;
+            }
+        };
         modelo.addColumn("DNI");
         modelo.addColumn("NOMBRE");
         modelo.addColumn("APELLIDO");
@@ -49,7 +53,7 @@ public class mostrarDocentesFrame extends javax.swing.JFrame {
         }
 
     }
-    
+
     private void actualizarTabla() {
         modelo = new DefaultTableModel();
         modelo.addColumn("DNI");
@@ -184,9 +188,9 @@ public class mostrarDocentesFrame extends javax.swing.JFrame {
         } catch (IOException ex) {
             Logger.getLogger(mostrarDocentesFrame.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+
         JOptionPane.showMessageDialog(null, "Docentes cargados exitosamente: " + iniciarSesionFrame.fechaHoy);
-        
+
         actualizarTabla();
     }//GEN-LAST:event_bt_cargarActionPerformed
 
@@ -196,7 +200,7 @@ public class mostrarDocentesFrame extends javax.swing.JFrame {
         } catch (IOException ex) {
             Logger.getLogger(mostrarDocentesFrame.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+
         JOptionPane.showMessageDialog(null, "Docentes guardados exitosamente: " + iniciarSesionFrame.fechaHoy);
     }//GEN-LAST:event_bt_g_docActionPerformed
 
