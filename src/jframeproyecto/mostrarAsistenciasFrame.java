@@ -48,7 +48,6 @@ public class mostrarAsistenciasFrame extends javax.swing.JFrame {
             info[4] = listaDocentes.arrListDocente.get(i).getEstadoEntrada();
             info[5] = listaDocentes.arrListDocente.get(i).getHoraSalida();
             info[6] = listaDocentes.arrListDocente.get(i).getEstadoSalida();
-            System.out.println(info);
             modelo.addRow(info);
         }
 

@@ -48,7 +48,7 @@ public class mostrarDocentesFrame extends javax.swing.JFrame {
             info[2] = listaDocentes.arrListDocente.get(i).getApellidos();
             info[3] = listaDocentes.arrListDocente.get(i).getSexo();
             info[4] = listaDocentes.arrListDocente.get(i).getAula();
-            System.out.println(info);
+            
             modelo.addRow(info);
         }
 
@@ -73,7 +73,6 @@ public class mostrarDocentesFrame extends javax.swing.JFrame {
             info[2] = listaDocentes.arrListDocente.get(i).getApellidos();
             info[3] = listaDocentes.arrListDocente.get(i).getSexo();
             info[4] = listaDocentes.arrListDocente.get(i).getAula();
-            System.out.println(info);
             modelo.addRow(info);
         }
     }

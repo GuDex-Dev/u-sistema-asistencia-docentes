@@ -189,7 +189,6 @@ public class registroDocenteFrame extends javax.swing.JFrame {
                     apellidosDocente.setText("");
                     aulaDocente.setText("");
                     claveDocente.setText("");
-                    System.out.println(listaDocentes.arrListDocente);
 
                 } else {
                     if (listaDocentes.BuscarXDni(dni) > -1 && listaDocentes.BuscarXClave(clave) > -1) {

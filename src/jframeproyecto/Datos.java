@@ -87,7 +87,6 @@ public class Datos {
     public static void guardarAsistencias(ArrayList<docente> lista) {
 
         PrintWriter salida = null;
-        System.out.println(nombreAsist);
         try {
             salida = new PrintWriter(new BufferedWriter(new FileWriter(nombreAsist)));
             for (int i = 0; i < lista.size(); i++) {

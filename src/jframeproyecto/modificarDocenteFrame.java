@@ -219,7 +219,6 @@ public class modificarDocenteFrame extends javax.swing.JFrame {
                     apellidosDocente.setText("");
                     aulaDocente.setText("");
                     claveDocente.setText("");
-                    System.out.println(listaDocentes.arrListDocente);
 
                 } else {
                     JOptionPane.showMessageDialog(null, "DNI o Clave ya existe");
@@ -284,7 +283,6 @@ public class modificarDocenteFrame extends javax.swing.JFrame {
             apellidosDocente.setText("");
             aulaDocente.setText("");
             claveDocente.setText("");
-            System.out.println(listaDocentes.arrListDocente);
         }
     }//GEN-LAST:event_bt_buscarActionPerformed
 

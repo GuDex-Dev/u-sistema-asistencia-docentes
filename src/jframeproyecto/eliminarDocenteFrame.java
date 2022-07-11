@@ -234,7 +234,6 @@ public class eliminarDocenteFrame extends javax.swing.JFrame {
             aulaDocente.setText("");
             claveDocente.setText("");
             dniDelete.setText("");
-            System.out.println(listaDocentes.arrListDocente);
 
         } else {
             JOptionPane.showMessageDialog(null, "Rellene todos los campos");
@@ -282,7 +281,6 @@ public class eliminarDocenteFrame extends javax.swing.JFrame {
             apellidosDocente.setText("");
             aulaDocente.setText("");
             claveDocente.setText("");
-            System.out.println(listaDocentes.arrListDocente);
         }
     }//GEN-LAST:event_bt_buscarActionPerformed
 
