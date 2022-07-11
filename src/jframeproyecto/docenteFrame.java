@@ -11,6 +11,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -53,6 +54,10 @@ public class docenteFrame extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         rSLabelFecha1 = new rojeru_san.RSLabelFecha();
         rSLabelHora1 = new rojeru_san.RSLabelHora();
+        eSalida = new javax.swing.JLabel();
+        eEntrada = new javax.swing.JLabel();
+        entrada = new javax.swing.JLabel();
+        salida = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -112,11 +117,27 @@ public class docenteFrame extends javax.swing.JFrame {
 
         rSLabelFecha1.setForeground(new java.awt.Color(0, 0, 0));
         rSLabelFecha1.setFont(new java.awt.Font("Consolas", 1, 14)); // NOI18N
-        jPanel1.add(rSLabelFecha1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 380, 110, 40));
+        jPanel1.add(rSLabelFecha1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 450, 110, 40));
 
         rSLabelHora1.setForeground(new java.awt.Color(0, 0, 0));
         rSLabelHora1.setFont(new java.awt.Font("Consolas", 1, 14)); // NOI18N
-        jPanel1.add(rSLabelHora1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 380, -1, -1));
+        jPanel1.add(rSLabelHora1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 450, -1, -1));
+
+        eSalida.setForeground(new java.awt.Color(0, 0, 0));
+        eSalida.setText("Estado:");
+        jPanel1.add(eSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 420, 370, 20));
+
+        eEntrada.setForeground(new java.awt.Color(0, 0, 0));
+        eEntrada.setText("Estado:");
+        jPanel1.add(eEntrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, 360, 20));
+
+        entrada.setForeground(new java.awt.Color(0, 0, 0));
+        entrada.setText("Entrada:");
+        jPanel1.add(entrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, 400, 20));
+
+        salida.setForeground(new java.awt.Color(0, 0, 0));
+        salida.setText("Salida: ");
+        jPanel1.add(salida, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 400, 20));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -126,7 +147,7 @@ public class docenteFrame extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 426, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE)
         );
 
         pack();
@@ -190,6 +211,8 @@ public class docenteFrame extends javax.swing.JFrame {
         } else {
             JOptionPane.showMessageDialog(null, "Usted ya tiene registrada una hora de ingreso en el dia ");
         }
+        
+        name();
     }//GEN-LAST:event_bt_registrarEntradaActionPerformed
 
     private void bt_registrarSalidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_registrarSalidaActionPerformed
@@ -247,7 +270,7 @@ public class docenteFrame extends javax.swing.JFrame {
         } else {
             JOptionPane.showMessageDialog(null, "Usted ya tiene registrada una hora de salida en el día ");
         }
-
+        name();
     }//GEN-LAST:event_bt_registrarSalidaActionPerformed
 
     /**
@@ -258,6 +281,12 @@ public class docenteFrame extends javax.swing.JFrame {
         listaDocentes obj = new listaDocentes();
         BB_Interactiva.setText("Hola, " + listaDocentes.arrListDocente.get(obj.BuscarXDni(iniciarSesionFrame.DniUs)).getNombre());
         BB_Interactiva.setHorizontalAlignment(0);
+
+        entrada.setText(listaDocentes.arrListDocente.get(obj.BuscarXDni(iniciarSesionFrame.DniUs)).getHoraEntrada());
+        eEntrada.setText("Estado: " + listaDocentes.arrListDocente.get(obj.BuscarXDni(iniciarSesionFrame.DniUs)).getEstadoEntrada());
+
+        salida.setText(listaDocentes.arrListDocente.get(obj.BuscarXDni(iniciarSesionFrame.DniUs)).getHoraSalida());
+        eSalida.setText("Estado: " + listaDocentes.arrListDocente.get(obj.BuscarXDni(iniciarSesionFrame.DniUs)).getEstadoSalida());
 
     }
 
@@ -314,12 +343,16 @@ public class docenteFrame extends javax.swing.JFrame {
     private javax.swing.JLabel BB_Interactiva;
     private javax.swing.JButton bt_registrarEntrada;
     private javax.swing.JButton bt_registrarSalida;
+    private javax.swing.JLabel eEntrada;
+    private javax.swing.JLabel eSalida;
+    private javax.swing.JLabel entrada;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private rojeru_san.RSLabelFecha rSLabelFecha1;
     private rojeru_san.RSLabelHora rSLabelHora1;
+    private javax.swing.JLabel salida;
     private javax.swing.JButton salirDocente;
     // End of variables declaration//GEN-END:variables
 }
