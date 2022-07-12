@@ -32,7 +32,7 @@ public class docenteFrame extends javax.swing.JFrame {
         this.setResizable(false);
         name();
         transparencia();
-        muestra.setBorder(javax.swing.BorderFactory.createEmptyBorder());
+        
 
     }
 
@@ -65,8 +65,6 @@ public class docenteFrame extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         salida = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        muestra = new javax.swing.JTextPane();
         jTextField1 = new javax.swing.JTextField();
 
         textField1.setText("textField1");
@@ -140,10 +138,15 @@ public class docenteFrame extends javax.swing.JFrame {
         eSalida.setForeground(new java.awt.Color(0, 0, 0));
         jPanel1.add(eSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 220, 200, 20));
 
+        eEntrada.setBackground(new java.awt.Color(255, 153, 153));
         eEntrada.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(eEntrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, 200, 20));
+        eEntrada.setText("     ");
+        eEntrada.setOpaque(true);
+        jPanel1.add(eEntrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, 200, 40));
 
+        entrada.setBackground(new java.awt.Color(255, 153, 153));
         entrada.setForeground(new java.awt.Color(0, 0, 0));
+        entrada.setOpaque(true);
         jPanel1.add(entrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 80, 200, 20));
 
         jLabel5.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
@@ -151,10 +154,12 @@ public class docenteFrame extends javax.swing.JFrame {
         jLabel5.setText("SALIDA");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 180, -1, 20));
 
+        jLabel6.setBackground(new java.awt.Color(255, 153, 153));
         jLabel6.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel6.setText("ENTRADA");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 60, -1, 20));
+        jLabel6.setText("           ENTRADA");
+        jLabel6.setOpaque(true);
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 60, 200, 20));
 
         salida.setForeground(new java.awt.Color(0, 0, 0));
         jPanel1.add(salida, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 200, 210, 20));
@@ -162,15 +167,6 @@ public class docenteFrame extends javax.swing.JFrame {
         jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
         jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 150, 150, 30));
-
-        muestra.setBackground(new java.awt.Color(255, 153, 153));
-        muestra.setBorder(null);
-        muestra.setForeground(new java.awt.Color(255, 153, 153));
-        muestra.setCaretColor(new java.awt.Color(255, 153, 153));
-        muestra.setSelectedTextColor(new java.awt.Color(255, 153, 153));
-        jScrollPane1.setViewportView(muestra);
-
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 50, 220, 80));
 
         jTextField1.setBackground(new java.awt.Color(255, 153, 153));
         jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 170, 220, 80));
@@ -227,7 +223,7 @@ public class docenteFrame extends javax.swing.JFrame {
                     horaF = dateH.parse(sHoraF);
                     Date horaE = dateH.parse(sHoraE);
 
-                    String datos = " Hora: " + sHoraE + " Fecha: " + sFechaE;
+                    String datos = "Hora: " + sHoraE + " Fecha: " + sFechaE;
                     listaDocentes.arrListDocente.get(pos).setHoraEntrada(datos);
 
                     if (horaE.before(horaI)) {
@@ -284,7 +280,7 @@ public class docenteFrame extends javax.swing.JFrame {
                         horaF = dateH.parse(sHoraF);
                         Date horaS = dateH.parse(sHoraS);
 
-                        String datos = "SALIDA" + " Hora: " + sHoraS + " Fecha: " + sFechaS;
+                        String datos =  "Hora: " + sHoraS + " Fecha: " + sFechaS;
 
                         listaDocentes.arrListDocente.get(pos).setHoraSalida(datos);
 
@@ -318,11 +314,11 @@ public class docenteFrame extends javax.swing.JFrame {
         BB_Interactiva.setText("Hola, " + listaDocentes.arrListDocente.get(obj.BuscarXDni(iniciarSesionFrame.DniUs)).getNombre());
         BB_Interactiva.setHorizontalAlignment(0);
 
-        entrada.setText(listaDocentes.arrListDocente.get(obj.BuscarXDni(iniciarSesionFrame.DniUs)).getHoraEntrada());
-        eEntrada.setText("Estado: " + listaDocentes.arrListDocente.get(obj.BuscarXDni(iniciarSesionFrame.DniUs)).getEstadoEntrada());
+        entrada.setText("  " +listaDocentes.arrListDocente.get(obj.BuscarXDni(iniciarSesionFrame.DniUs)).getHoraEntrada());
+        eEntrada.setText( "  " +listaDocentes.arrListDocente.get(obj.BuscarXDni(iniciarSesionFrame.DniUs)).getEstadoEntrada());
 
-        salida.setText(listaDocentes.arrListDocente.get(obj.BuscarXDni(iniciarSesionFrame.DniUs)).getHoraSalida());
-        eSalida.setText("Estado: " + listaDocentes.arrListDocente.get(obj.BuscarXDni(iniciarSesionFrame.DniUs)).getEstadoSalida());
+        salida.setText("  " +listaDocentes.arrListDocente.get(obj.BuscarXDni(iniciarSesionFrame.DniUs)).getHoraSalida());
+        eSalida.setText("  " + listaDocentes.arrListDocente.get(obj.BuscarXDni(iniciarSesionFrame.DniUs)).getEstadoSalida());
 
     }
 
@@ -388,12 +384,10 @@ public class docenteFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextPane jTextPane2;
-    private javax.swing.JTextPane muestra;
     private rojeru_san.RSLabelFecha rSLabelFecha1;
     private rojeru_san.RSLabelHora rSLabelHora1;
     private javax.swing.JLabel salida;
