@@ -191,7 +191,7 @@ public class docenteFrame extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_salirDocenteActionPerformed
 
-    public static String sHoraI = "7:30", sHoraF = "13:00";
+    public static String sHoraI = "22:32", sHoraF = "22:35";
     
     private void bt_registrarEntradaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_registrarEntradaActionPerformed
 

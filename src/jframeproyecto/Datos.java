@@ -26,8 +26,8 @@ import java.util.ArrayList;
 
 public class Datos {
 
-    private static String nombreFichero = "src/registros/datos.dat";
-    private static String nombreAsist = "src/registros/" + iniciarSesionFrame.fechaHoytxt + ".txt";
+    public static String nombreFichero = "src/registros/datos.dat";
+    public static String nombreAsist;
 
     public static void guardarDocentes() throws IOException {
         File f = new File(nombreFichero);
@@ -85,12 +85,13 @@ public class Datos {
     }
 
     public static void guardarAsistencias(ArrayList<docente> lista) {
-
+        nombreAsist = "src/registros/" + iniciarSesionFrame.fechaHoytxt + ".txt";
         PrintWriter salida = null;
+        System.out.println(nombreAsist);
         try {
             salida = new PrintWriter(new BufferedWriter(new FileWriter(nombreAsist)));
             for (int i = 0; i < lista.size(); i++) {
-                salida.println(lista.get(i).getDNI() + " - " + lista.get(i).getNombre() + " - " + lista.get(i).getApellidos() + " - " + lista.get(i).getSexo() + " - " + lista.get(i).getAula() + " - " + lista.get(i).getClave() + " - " + lista.get(i).getHoraEntrada() + " - " + lista.get(i).getEstadoEntrada() + " - " + lista.get(i).getHoraSalida() + " - " + lista.get(i).getEstadoSalida());
+                salida.println(lista.get(i).getDNI() + " - " + lista.get(i).getNombre() + " - " + lista.get(i).getApellidos() + " - " + lista.get(i).getSexo() + " - " + lista.get(i).getAula() + " - " + lista.get(i).getClave() + " - ENTRADA " + lista.get(i).getHoraEntrada() + " - " + lista.get(i).getEstadoEntrada() + " - SALIDA " + lista.get(i).getHoraSalida() + " - " + lista.get(i).getEstadoSalida());
             }
             salida.close();
 
