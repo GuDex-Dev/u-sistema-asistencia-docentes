@@ -181,14 +181,12 @@ public class iniciarSesionFrame extends javax.swing.JFrame {
         DniUs = dniInp.getText();
         String numClave = claveInp.getText();
 
-        listaDocentes obj = new listaDocentes();
-
         if (DniUs.equals(idAdmin) && numClave.equals(claveAdmin)) {
             adminFrame VAdmin = new adminFrame();
             VAdmin.setVisible(true);
             this.setVisible(false);
             
-        } else if ((obj.BuscarXDni(DniUs) == obj.BuscarXClave(numClave)) && obj.BuscarXDni(DniUs) != -1) {
+        } else if ((listaDocentes.BuscarXDni(DniUs) == listaDocentes.BuscarXClave(numClave)) && listaDocentes.BuscarXDni(DniUs) != -1) {
             docenteFrame VDocente = new docenteFrame();
             VDocente.setVisible(true);
             this.setVisible(false);
