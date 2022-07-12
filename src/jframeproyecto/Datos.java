@@ -91,7 +91,7 @@ public class Datos {
         try {
             salida = new PrintWriter(new BufferedWriter(new FileWriter(nombreAsist)));
             for (int i = 0; i < lista.size(); i++) {
-                salida.println(lista.get(i).getDNI() + " - " + lista.get(i).getNombre() + " - " + lista.get(i).getApellidos() + " - " + lista.get(i).getSexo() + " - " + lista.get(i).getAula() + " - " + lista.get(i).getClave() + " - ENTRADA " + lista.get(i).getHoraEntrada() + " - " + lista.get(i).getEstadoEntrada() + " - SALIDA " + lista.get(i).getHoraSalida() + " - " + lista.get(i).getEstadoSalida());
+                salida.println(lista.get(i).getDNI() + " - " + lista.get(i).getNombre() + " - " + lista.get(i).getApellidos() + " - " + lista.get(i).getSexo() + " - " + lista.get(i).getAula() + " - " + lista.get(i).getClave() + " - ENTRADA " + lista.get(i).getHoraEntrada() + "   " + lista.get(i).getEstadoEntrada() + " - SALIDA " + lista.get(i).getHoraSalida() + "   " + lista.get(i).getEstadoSalida());
             }
             salida.close();
 

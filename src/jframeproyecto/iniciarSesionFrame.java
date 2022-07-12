@@ -31,6 +31,7 @@ public class iniciarSesionFrame extends javax.swing.JFrame {
             Datos.cargarDocentes();
         } catch (IOException ex) {
             Logger.getLogger(iniciarSesionFrame.class.getName()).log(Level.SEVERE, null, ex);
+            JOptionPane.showMessageDialog(null, "falla");
         }
         initComponents();
         setLocationRelativeTo(null);
