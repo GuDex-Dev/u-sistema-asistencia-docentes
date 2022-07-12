@@ -5,9 +5,12 @@
 package jframeproyecto;
 
 import java.awt.event.KeyEvent;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -24,6 +27,11 @@ public class iniciarSesionFrame extends javax.swing.JFrame {
      * Creates new form Proyecto
      */
     public iniciarSesionFrame() {
+        try {
+            Datos.cargarDocentes();
+        } catch (IOException ex) {
+            Logger.getLogger(iniciarSesionFrame.class.getName()).log(Level.SEVERE, null, ex);
+        }
         initComponents();
         setLocationRelativeTo(null);
         this.setResizable(false);
