@@ -48,6 +48,7 @@ public class docenteFrame extends javax.swing.JFrame {
         textField1 = new java.awt.TextField();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextPane2 = new javax.swing.JTextPane();
+        jComboBox1 = new javax.swing.JComboBox<>();
         jPanel1 = new javax.swing.JPanel();
         BB_Interactiva = new javax.swing.JLabel();
         bt_registrarEntrada = new javax.swing.JButton();
@@ -64,12 +65,12 @@ public class docenteFrame extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         salida = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
-        jTextField1 = new javax.swing.JTextField();
 
         textField1.setText("textField1");
 
         jScrollPane2.setViewportView(jTextPane2);
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -129,57 +130,56 @@ public class docenteFrame extends javax.swing.JFrame {
 
         rSLabelFecha1.setForeground(new java.awt.Color(0, 0, 0));
         rSLabelFecha1.setFont(new java.awt.Font("Consolas", 1, 14)); // NOI18N
-        jPanel1.add(rSLabelFecha1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 290, 120, 40));
+        jPanel1.add(rSLabelFecha1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 310, 120, 40));
 
         rSLabelHora1.setForeground(new java.awt.Color(0, 0, 0));
         rSLabelHora1.setFont(new java.awt.Font("Consolas", 1, 14)); // NOI18N
-        jPanel1.add(rSLabelHora1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 310, -1, -1));
+        jPanel1.add(rSLabelHora1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 330, -1, -1));
 
+        eSalida.setBackground(new java.awt.Color(255, 153, 153));
         eSalida.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(eSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 220, 200, 20));
+        eSalida.setOpaque(true);
+        jPanel1.add(eSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 250, 220, 50));
 
         eEntrada.setBackground(new java.awt.Color(255, 153, 153));
         eEntrada.setForeground(new java.awt.Color(0, 0, 0));
         eEntrada.setText("     ");
         eEntrada.setOpaque(true);
-        jPanel1.add(eEntrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, 200, 40));
+        jPanel1.add(eEntrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, 220, 40));
 
         entrada.setBackground(new java.awt.Color(255, 153, 153));
         entrada.setForeground(new java.awt.Color(0, 0, 0));
         entrada.setOpaque(true);
-        jPanel1.add(entrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 80, 200, 20));
+        jPanel1.add(entrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 110, 220, 20));
 
-        jLabel5.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        jLabel5.setBackground(new java.awt.Color(255, 153, 153));
+        jLabel5.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel5.setText("SALIDA");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 180, -1, 20));
+        jLabel5.setText("           SALIDA");
+        jLabel5.setOpaque(true);
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 200, 220, 30));
 
         jLabel6.setBackground(new java.awt.Color(255, 153, 153));
-        jLabel6.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel6.setText("           ENTRADA");
+        jLabel6.setText("          ENTRADA");
         jLabel6.setOpaque(true);
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 60, 200, 20));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 80, 220, 30));
 
+        salida.setBackground(new java.awt.Color(255, 153, 153));
         salida.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(salida, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 200, 210, 20));
-
-        jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
-        jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 150, 150, 30));
-
-        jTextField1.setBackground(new java.awt.Color(255, 153, 153));
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 170, 220, 80));
+        salida.setOpaque(true);
+        jPanel1.add(salida, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 230, 220, 20));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 610, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 620, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 351, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 373, Short.MAX_VALUE)
         );
 
         pack();
@@ -223,7 +223,7 @@ public class docenteFrame extends javax.swing.JFrame {
                     horaF = dateH.parse(sHoraF);
                     Date horaE = dateH.parse(sHoraE);
 
-                    String datos = "Hora: " + sHoraE + " Fecha: " + sFechaE;
+                    String datos = "Hora: " + sHoraE + "     Fecha: " + sFechaE;
                     listaDocentes.arrListDocente.get(pos).setHoraEntrada(datos);
 
                     if (horaE.before(horaI)) {
@@ -280,7 +280,7 @@ public class docenteFrame extends javax.swing.JFrame {
                         horaF = dateH.parse(sHoraF);
                         Date horaS = dateH.parse(sHoraS);
 
-                        String datos =  "Hora: " + sHoraS + " Fecha: " + sFechaS;
+                        String datos =  "Hora: " + sHoraS + "       Fecha: " + sFechaS;
 
                         listaDocentes.arrListDocente.get(pos).setHoraSalida(datos);
 
@@ -378,6 +378,7 @@ public class docenteFrame extends javax.swing.JFrame {
     private javax.swing.JLabel eEntrada;
     private javax.swing.JLabel eSalida;
     private javax.swing.JLabel entrada;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -385,8 +386,6 @@ public class docenteFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextPane jTextPane2;
     private rojeru_san.RSLabelFecha rSLabelFecha1;
     private rojeru_san.RSLabelHora rSLabelHora1;
