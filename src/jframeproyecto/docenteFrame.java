@@ -32,6 +32,7 @@ public class docenteFrame extends javax.swing.JFrame {
         this.setResizable(false);
         name();
         transparencia();
+        muestra.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 
     }
 
@@ -44,6 +45,9 @@ public class docenteFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        textField1 = new java.awt.TextField();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextPane2 = new javax.swing.JTextPane();
         jPanel1 = new javax.swing.JPanel();
         BB_Interactiva = new javax.swing.JLabel();
         bt_registrarEntrada = new javax.swing.JButton();
@@ -57,7 +61,17 @@ public class docenteFrame extends javax.swing.JFrame {
         eSalida = new javax.swing.JLabel();
         eEntrada = new javax.swing.JLabel();
         entrada = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         salida = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        muestra = new javax.swing.JTextPane();
+        jTextField1 = new javax.swing.JTextField();
+
+        textField1.setText("textField1");
+
+        jScrollPane2.setViewportView(jTextPane2);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -117,37 +131,59 @@ public class docenteFrame extends javax.swing.JFrame {
 
         rSLabelFecha1.setForeground(new java.awt.Color(0, 0, 0));
         rSLabelFecha1.setFont(new java.awt.Font("Consolas", 1, 14)); // NOI18N
-        jPanel1.add(rSLabelFecha1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 450, 110, 40));
+        jPanel1.add(rSLabelFecha1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 290, 120, 40));
 
         rSLabelHora1.setForeground(new java.awt.Color(0, 0, 0));
         rSLabelHora1.setFont(new java.awt.Font("Consolas", 1, 14)); // NOI18N
-        jPanel1.add(rSLabelHora1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 450, -1, -1));
+        jPanel1.add(rSLabelHora1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 310, -1, -1));
 
         eSalida.setForeground(new java.awt.Color(0, 0, 0));
-        eSalida.setText("Estado:");
-        jPanel1.add(eSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 420, 370, 20));
+        jPanel1.add(eSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 220, 200, 20));
 
         eEntrada.setForeground(new java.awt.Color(0, 0, 0));
-        eEntrada.setText("Estado:");
-        jPanel1.add(eEntrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, 360, 20));
+        jPanel1.add(eEntrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, 200, 20));
 
         entrada.setForeground(new java.awt.Color(0, 0, 0));
-        entrada.setText("Entrada:");
-        jPanel1.add(entrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, 400, 20));
+        jPanel1.add(entrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 80, 200, 20));
+
+        jLabel5.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel5.setText("SALIDA");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 180, -1, 20));
+
+        jLabel6.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel6.setText("ENTRADA");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 60, -1, 20));
 
         salida.setForeground(new java.awt.Color(0, 0, 0));
-        salida.setText("Salida: ");
-        jPanel1.add(salida, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 400, 20));
+        jPanel1.add(salida, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 200, 210, 20));
+
+        jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
+        jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 150, 150, 30));
+
+        muestra.setBackground(new java.awt.Color(255, 153, 153));
+        muestra.setBorder(null);
+        muestra.setForeground(new java.awt.Color(255, 153, 153));
+        muestra.setCaretColor(new java.awt.Color(255, 153, 153));
+        muestra.setSelectedTextColor(new java.awt.Color(255, 153, 153));
+        jScrollPane1.setViewportView(muestra);
+
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 50, 220, 80));
+
+        jTextField1.setBackground(new java.awt.Color(255, 153, 153));
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 170, 220, 80));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 413, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 610, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 351, Short.MAX_VALUE)
         );
 
         pack();
@@ -191,7 +227,7 @@ public class docenteFrame extends javax.swing.JFrame {
                     horaF = dateH.parse(sHoraF);
                     Date horaE = dateH.parse(sHoraE);
 
-                    String datos = "ENTRADA" + " Hora: " + sHoraE + " Fecha: " + sFechaE;
+                    String datos = " Hora: " + sHoraE + " Fecha: " + sFechaE;
                     listaDocentes.arrListDocente.get(pos).setHoraEntrada(datos);
 
                     if (horaE.before(horaI)) {
@@ -349,10 +385,19 @@ public class docenteFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextPane jTextPane2;
+    private javax.swing.JTextPane muestra;
     private rojeru_san.RSLabelFecha rSLabelFecha1;
     private rojeru_san.RSLabelHora rSLabelHora1;
     private javax.swing.JLabel salida;
     private javax.swing.JButton salirDocente;
+    private java.awt.TextField textField1;
     // End of variables declaration//GEN-END:variables
 }
