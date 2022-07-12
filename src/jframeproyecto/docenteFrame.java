@@ -130,46 +130,46 @@ public class docenteFrame extends javax.swing.JFrame {
 
         rSLabelFecha1.setForeground(new java.awt.Color(0, 0, 0));
         rSLabelFecha1.setFont(new java.awt.Font("Consolas", 1, 14)); // NOI18N
-        jPanel1.add(rSLabelFecha1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 30, 120, 40));
+        jPanel1.add(rSLabelFecha1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 310, 120, 40));
 
         rSLabelHora1.setForeground(new java.awt.Color(0, 0, 0));
         rSLabelHora1.setFont(new java.awt.Font("Consolas", 1, 14)); // NOI18N
-        jPanel1.add(rSLabelHora1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 50, -1, 40));
+        jPanel1.add(rSLabelHora1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 330, -1, -1));
 
         eSalida.setBackground(new java.awt.Color(255, 153, 153));
         eSalida.setForeground(new java.awt.Color(0, 0, 0));
         eSalida.setOpaque(true);
-        jPanel1.add(eSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 290, 220, 50));
+        jPanel1.add(eSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 250, 220, 50));
 
         eEntrada.setBackground(new java.awt.Color(255, 153, 153));
         eEntrada.setForeground(new java.awt.Color(0, 0, 0));
         eEntrada.setText("     ");
         eEntrada.setOpaque(true);
-        jPanel1.add(eEntrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 170, 220, 40));
+        jPanel1.add(eEntrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, 220, 40));
 
         entrada.setBackground(new java.awt.Color(255, 153, 153));
         entrada.setForeground(new java.awt.Color(0, 0, 0));
         entrada.setOpaque(true);
-        jPanel1.add(entrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 150, 220, 20));
+        jPanel1.add(entrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 110, 220, 20));
 
         jLabel5.setBackground(new java.awt.Color(255, 153, 153));
         jLabel5.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("           SALIDA");
         jLabel5.setOpaque(true);
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 240, 220, 30));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 200, 220, 30));
 
         jLabel6.setBackground(new java.awt.Color(255, 153, 153));
         jLabel6.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("          ENTRADA");
         jLabel6.setOpaque(true);
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 120, 220, 30));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 80, 220, 30));
 
         salida.setBackground(new java.awt.Color(255, 153, 153));
         salida.setForeground(new java.awt.Color(0, 0, 0));
         salida.setOpaque(true);
-        jPanel1.add(salida, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 270, 220, 20));
+        jPanel1.add(salida, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 230, 220, 20));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
