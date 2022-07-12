@@ -176,9 +176,9 @@ public class registroDocenteFrame extends javax.swing.JFrame {
             } else {
                 sexo = "No se seleciono";
             }
-
             String aula = aulaDocente.getText();
             String clave = claveDocente.getText();
+            
             if (dni.length() == 8 && clave.length() == 4) {
                 if (listaDocentes.BuscarXDni(dni) == -1 && listaDocentes.BuscarXClave(clave) == -1) {
                     listaDocentes.arrListDocente.add(new docente(dni, nombre, apellidos, sexo, aula, clave, "", "", "", ""));

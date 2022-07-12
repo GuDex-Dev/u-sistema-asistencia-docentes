@@ -191,11 +191,12 @@ public class docenteFrame extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_salirDocenteActionPerformed
 
+    public static String sHoraI = "7:30", sHoraF = "13:00";
+    
     private void bt_registrarEntradaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_registrarEntradaActionPerformed
 
         int pos = listaDocentes.BuscarXDni(iniciarSesionFrame.DniUs);
 
-        String sHoraI = "7:30", sHoraF = "13:00";
         String sHoraE, sFechaE;
 
         if (listaDocentes.arrListDocente.get(pos).getHoraEntrada().length() == 0) {
@@ -250,8 +251,7 @@ public class docenteFrame extends javax.swing.JFrame {
     private void bt_registrarSalidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_registrarSalidaActionPerformed
 
         int pos = listaDocentes.BuscarXDni(iniciarSesionFrame.DniUs);
-
-        String sHoraI = "7:30", sHoraF = "13:00";
+        
         String sHoraS, sFechaS;
 
         if (listaDocentes.arrListDocente.get(pos).getHoraSalida().length() == 0) {
