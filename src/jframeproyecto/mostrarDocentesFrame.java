@@ -126,7 +126,7 @@ public class mostrarDocentesFrame extends javax.swing.JFrame {
         ));
         jScrollPane2.setViewportView(tabla);
 
-        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 1050, 480));
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 1050, 270));
 
         rSLabelHora1.setForeground(new java.awt.Color(0, 0, 0));
         jPanel1.add(rSLabelHora1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 50, -1, 50));
@@ -139,7 +139,7 @@ public class mostrarDocentesFrame extends javax.swing.JFrame {
                 bt_volverActionPerformed(evt);
             }
         });
-        jPanel1.add(bt_volver, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 590, 100, 40));
+        jPanel1.add(bt_volver, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 380, 100, 40));
 
         bt_cargar.setBackground(new java.awt.Color(255, 102, 102));
         bt_cargar.setForeground(new java.awt.Color(0, 0, 0));
@@ -169,7 +169,7 @@ public class mostrarDocentesFrame extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 644, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 436, Short.MAX_VALUE)
         );
 
         pack();

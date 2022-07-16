@@ -100,7 +100,7 @@ public class mostrarAsistenciasFrame extends javax.swing.JFrame {
         ));
         jScrollPane2.setViewportView(tabla);
 
-        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 1040, 480));
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 1040, 300));
 
         bt_volver.setBackground(new java.awt.Color(255, 102, 102));
         bt_volver.setForeground(new java.awt.Color(0, 0, 0));
@@ -110,7 +110,7 @@ public class mostrarAsistenciasFrame extends javax.swing.JFrame {
                 bt_volverActionPerformed(evt);
             }
         });
-        jPanel1.add(bt_volver, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 570, 100, 40));
+        jPanel1.add(bt_volver, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 390, 100, 40));
 
         bt_g_asist.setBackground(new java.awt.Color(255, 102, 102));
         bt_g_asist.setForeground(new java.awt.Color(0, 0, 0));
@@ -130,9 +130,7 @@ public class mostrarAsistenciasFrame extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 626, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 449, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();

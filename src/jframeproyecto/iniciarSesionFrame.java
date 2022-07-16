@@ -27,12 +27,6 @@ public class iniciarSesionFrame extends javax.swing.JFrame {
      * Creates new form Proyecto
      */
     public iniciarSesionFrame() {
-        try {
-            Datos.cargarDocentes();
-        } catch (IOException ex) {
-            Logger.getLogger(iniciarSesionFrame.class.getName()).log(Level.SEVERE, null, ex);
-            JOptionPane.showMessageDialog(null, "falla");
-        }
         initComponents();
         setLocationRelativeTo(null);
         this.setResizable(false);
